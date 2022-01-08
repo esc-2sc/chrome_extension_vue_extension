@@ -11,6 +11,7 @@ export default {
 </script>
 
 <style lang="less">
-@import 'src/less/common';
+@import 'src/less/popup';
+
 p{ .fs(20); }
 </style>

@@ -10,8 +10,7 @@ export default {
 };
 </script>
 
-<style scoped>
-p {
-  font-size: 20px;
-}
+<style lang="less">
+@import 'src/less/options';
+p { .fs(20); }
 </style>
