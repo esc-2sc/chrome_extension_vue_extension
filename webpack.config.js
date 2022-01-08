@@ -46,6 +46,17 @@ const config = {
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader?indentedSyntax'],
       },
       {
+        test: /\.less$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', {
+          loader: "less-loader",
+          options: {
+            lessOptions: {
+              strictMath: true,
+            },
+          },
+        },],
+      },
+      {
         test: /\.(png|jpg|gif|svg|ico)$/,
         loader: 'file-loader',
         options: {

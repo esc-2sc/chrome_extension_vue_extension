@@ -10,8 +10,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-p {
-  font-size: 20px;
-}
+<style lang="less">
+@import 'src/less/common';
+p{ .fs(20); }
 </style>
