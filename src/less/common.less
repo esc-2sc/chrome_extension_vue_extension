@@ -1,0 +1,41 @@
+@import './vars.less';
+@import './env.less';
+@import './base.less';
+@import './font.less';
+@import './asset.less';
+
+/* layout */
+* {
+  .-box;
+  &::-webkit-scrollbar {
+    .w(4);
+  }
+  &::-webkit-scrollbar-track {
+    .bgc(transparent);
+  }
+  &::-webkit-scrollbar-thumb {
+    .bgc(transparent);
+    .br(2);
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    .bgc(rgba(255, 255, 255, 0.3));
+  }
+  scroll-behavior: smooth;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+body {
+  .font-jet;
+  .bgc(@bgc);
+}
+a {
+  .c(@c-link);
+}
+
+.ex-center() {
+  .h(100%);
+  .flex-center;
+  flex-direction: column;
+}
