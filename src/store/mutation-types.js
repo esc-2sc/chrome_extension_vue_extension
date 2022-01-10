@@ -1,1 +1,2 @@
 export const UPDATE_FOO = 'UPDATE_FOO';
+export const UPDATE_URL_OPTION = 'UPDATE_URL_OPTION';
